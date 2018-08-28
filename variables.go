@@ -3,7 +3,7 @@
 package main 
 
 import ("fmt"
-		"refelct"
+		"reflect"
 )
 		// The Go reflection package has methods for inspecting the type of variables. 
 
@@ -46,10 +46,12 @@ func main(){
 	test1 := "string"
     test2 := 10
     test3 := 1.2
+    test4 := false
 
     fmt.Println(reflect.TypeOf(test1))
     fmt.Println(reflect.TypeOf(test2))
     fmt.Println(reflect.TypeOf(test3))
+    fmt.Println(reflect.TypeOf(test4))
 
     // Simple nice thread about typeof vars in go:-   https://stackoverflow.com/questions/20170275/how-to-find-a-type-of-an-object-in-go
     // Some stuff about packages and set data structure. https://code.tutsplus.com/tutorials/12-indispensable-go-packages-and-libraries--cms-29008
